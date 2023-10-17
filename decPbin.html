@@ -1,0 +1,28 @@
+<!-- Conversor de decimal para binário  -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Conversor de decimal para binário</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Conversor de decimal para binário</h2>
+        <div class="inputContainer">
+            <input
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                type="number" name="conversor" id="conversor" maxlength="8" onchange="converter(this.value)"/> <!-- Limitar a entrada de dígitos -->
+        </div>
+        <div class="outputContainer" style="width: 100%; word-wrap: break-word; display: inline-block;">
+            <h1 id="res">0</h1>
+        </div>
+    </div>
+    <script src="binar.js"></script>
+</body>
+
+</html>
